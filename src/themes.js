@@ -125,7 +125,7 @@ export const themeSettings = (mode) => {
   const colors = tokens(mode);
 
   return {
-    pallete: {
+    palette: {
       mode: mode,
       ...(mode === "dark"
         ? {
