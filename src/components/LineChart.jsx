@@ -1,6 +1,6 @@
 import { ResponsiveLine } from "@nivo/line";
 import { mockLineData as data } from "../data/mockData";
-import { useTheme } from "@emotion/react";
+import { useTheme } from "@mui/material";
 import { tokens } from "../theme";
 
 const LineChart = ({ isDashboard = false }) => {
@@ -72,7 +72,7 @@ const LineChart = ({ isDashboard = false }) => {
         tickValues: 5,
         tickPadding: 5,
         tickRotation: 0,
-        legend: "count",
+        legend: isDashboard ? "" : "count",
         legendOffset: -40,
         legendPosition: "middle",
         truncateTickAt: 0,
