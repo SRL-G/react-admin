@@ -28,13 +28,18 @@ const BarChart = ({ isDashboard = false }) => {
               strokeWidth: 1,
             },
             text: {
-              fil: colors.grey[100],
+              fill: colors.grey[100],
             },
           },
         },
         legends: {
           text: {
             fill: colors.grey[100],
+          },
+        },
+        tooltip: {
+          container: {
+            color: colors.primary[500],
           },
         },
       }}
