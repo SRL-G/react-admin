@@ -78,7 +78,7 @@ const Team = () => {
             border: 0,
           },
           "& .MuiDataGrid-cell": {
-            border: 0,
+            border: "0 !important",
           },
           "& .name-column--cell": {
             color: colors.greenAccent[300],
@@ -105,7 +105,10 @@ const Team = () => {
           },
         }}
       >
-        <DataGrid rows={mockDataTeam} columns={columns} />
+        <DataGrid
+          rows={mockDataTeam}
+          columns={columns}
+        />
       </Box>
     </Box>
   );
